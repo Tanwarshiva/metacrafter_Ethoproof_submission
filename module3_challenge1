@@ -1,0 +1,45 @@
+// SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.18;
+
+contract SimpleContract {
+    // Declare four different types of variables
+    uint256 public uintVariable;
+    int256 public intVariable;
+    address public addressVariable;
+    string public stringVariable;
+
+    // Set functions for each variable
+    function setUintVariable(uint256 newValue) public {
+        uintVariable = newValue;
+    }
+
+    function setIntVariable(int256 newValue) public {
+        intVariable = newValue;
+    }
+
+    function setAddressVariable(address newValue) public {
+        addressVariable = newValue;
+    }
+
+    function setStringVariable(string memory newValue) public {
+        stringVariable = newValue;
+    }
+
+    // Get functions for each variable
+    function getUintVariable() public view returns (uint256) {
+        return uintVariable;
+    }
+
+    function getIntVariable() public view returns (int256) {
+        return intVariable;
+    }
+
+    function getAddressVariable() public view returns (address) {
+        return addressVariable;
+    }
+
+    function getStringVariable() public view returns (string memory) {
+        return stringVariable;
+    }
+}
